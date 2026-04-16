@@ -1,0 +1,104 @@
+/* =========================================
+   ADMIN COMPANY MANAGEMENT STYLES
+========================================= */
+
+.data-panel {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    overflow: hidden;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th {
+    background: #fafafa;
+    padding: 20px 25px;
+    text-align: left;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: #8c8c8c;
+    border-bottom: 1px solid #f0f2f5;
+}
+
+.admin-table td {
+    padding: 20px 25px;
+    border-bottom: 1px solid #f8f9fa;
+    vertical-align: middle;
+}
+
+.comp-cell { display: flex; align-items: center; gap: 15px; }
+.c-logo {
+    width: 45px; height: 45px;
+    background: #f0fdf4; color: #16a34a;
+    border-radius: 8px; display: flex;
+    align-items: center; justify-content: center;
+    font-weight: 800; font-size: 18px;
+    border: 1px solid #dcfce7;
+}
+
+.c-info strong { display: flex; align-items: center; gap: 6px; font-size: 15px; color: #111; }
+.c-info span { font-size: 12px; color: #8c8c8c; display: block; margin-top: 2px; }
+.verified-tick { color: #1890ff; font-size: 14px; }
+
+.u-link { font-size: 13px; font-weight: 700; color: #1890ff; margin-bottom: 2px; }
+.u-email { font-size: 12px; color: #666; }
+
+.job-count-badge { background: #f0f2f5; color: #444; padding: 4px 10px; border-radius: 4px; font-size: 12px; font-weight: 700; }
+
+.badge { padding: 6px 12px; border-radius: 4px; font-size: 10px; font-weight: 800; text-transform: uppercase; }
+.b-verified { background: #e6f7ff; color: #1890ff; border: 1px solid #91d5ff; }
+.b-pending { background: #fff7e6; color: #fa8c16; border: 1px solid #ffd591; }
+
+/* ACTION BUTTONS GRID */
+.action-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-verify {
+    background: #1890ff;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.btn-verify:hover { background: #096dd9; transform: translateY(-2px); }
+
+.btn-revoke {
+    background: #fff;
+    color: #666;
+    border: 1px solid #d9d9d9;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.btn-delete-icon {
+    width: 35px;
+    height: 35px;
+    background: #fff1f0;
+    color: #ff4d4f;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-delete-icon:hover { background: #ffccc7; transform: scale(1.1); }

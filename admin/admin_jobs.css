@@ -1,0 +1,82 @@
+/* =========================================
+   ADMIN JOB MODERATION STYLES
+========================================= */
+
+.data-panel {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    overflow: hidden;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th {
+    background: #fafafa;
+    padding: 18px 25px;
+    text-align: left;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #8c8c8c;
+    border-bottom: 1px solid #f0f2f5;
+}
+
+.admin-table td {
+    padding: 18px 25px;
+    border-bottom: 1px solid #f8f9fa;
+    vertical-align: middle;
+}
+
+/* Job Details */
+.job-info strong { display: block; font-size: 15px; color: #1a1a1a; font-weight: 700; }
+.job-info span { font-size: 12px; color: #1890ff; font-weight: 600; }
+
+.company-tag { font-size: 14px; color: #4a5568; font-weight: 600; display: flex; align-items: center; gap: 8px; }
+.company-tag i { color: #a0aec0; }
+
+.date-text { font-size: 13px; color: #718096; }
+
+.job-type-pill {
+    background: #f0fdf4;
+    color: #16a34a;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Remove Button */
+.remove-btn {
+    background: #fff1f0;
+    color: #ff4d4f;
+    padding: 8px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    transition: 0.3s;
+    border: 1px solid #ffa39e;
+}
+
+.remove-btn:hover {
+    background: #ff4d4f;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(255, 77, 79, 0.2);
+}
+
+/* Success Alert */
+.alert-success-top {
+    background: #f6ffed;
+    color: #52c41a;
+    border: 1px solid #b7eb8f;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 600;
+}

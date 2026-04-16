@@ -1,0 +1,427 @@
+/* =========================================
+   GLOBAL & BODY STYLES
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html, body.dashboard-body {
+    height: 100%;
+}
+
+body.dashboard-body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f3f2ef; /* Soft premium grey */
+}
+
+.main-content-wrapper {
+    flex: 1 0 auto;
+    width: 100%;
+    margin-top: 100px; /* Space below fixed header */
+}
+
+/* =========================================
+   HEADER (NAVBAR) STYLES
+========================================= */
+.navbar {
+    background-color: #ffffff;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    border-bottom: 1px solid #e1e4e8;
+    z-index: 1000;
+}
+
+.nav-logo {
+    color: #004182;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #004182;
+}
+
+.btn-logout {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #004182;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 18px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.2s;
+}
+
+.btn-logout:hover {
+    background-color: #002d5a;
+}
+
+/* =========================================
+   DASHBOARD GRID & FEED STYLES
+========================================= */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto 40px auto;
+    padding: 0 20px;
+}
+
+/* SIDEBAR STYLES */
+.sidebar-card {
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e1e4e8;
+    overflow: hidden;
+    position: sticky;
+    top: 100px;
+}
+
+.sidebar-cover { 
+    height: 70px; 
+    background: #004182; 
+}
+
+.sidebar-profile { 
+    text-align: center; 
+    padding: 0 15px 15px; 
+    margin-top: -35px; 
+}
+
+.sidebar-avatar {
+    width: 70px; 
+    height: 70px; 
+    background: #ffffff; 
+    border-radius: 50%;
+    margin: 0 auto 10px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    font-size: 26px; 
+    font-weight: 800; 
+    color: #004182; 
+    border: 4px solid #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.sidebar-profile h2 { font-size: 16px; color: #1a1a1a; margin: 0; }
+.sidebar-profile p { font-size: 12px; color: #666; margin-top: 4px; }
+.sidebar-stats { border-top: 1px solid #f0f2f5; padding: 15px; }
+.stat { display: flex; justify-content: space-between; font-size: 12px; color: #666; margin-bottom: 8px; }
+
+/* FEED STYLES */
+.create-post-card, .feed-post-card {
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e1e4e8;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.create-post-input { display: flex; gap: 15px; align-items: flex-start; }
+
+.mini-avatar {
+    width: 45px; 
+    height: 45px; 
+    border-radius: 50%; 
+    background: #004182; 
+    color: #ffffff;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    font-weight: 700; 
+    flex-shrink: 0;
+}
+
+.create-post-input textarea {
+    flex: 1; 
+    border: none; 
+    font-size: 16px; 
+    min-height: 70px; 
+    resize: none; 
+    outline: none; 
+    padding-top: 10px; 
+    font-family: 'Inter', sans-serif;
+}
+
+.create-post-actions {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    border-top: 1px solid #f0f2f5; 
+    padding-top: 15px; 
+    margin-top: 10px;
+}
+
+.photo-upload-btn { 
+    color: #004182; 
+    font-weight: 700; 
+    cursor: pointer; 
+    font-size: 13px; 
+    letter-spacing: 0.5px; 
+}
+
+.publish-btn {
+    background: #004182; 
+    color: #ffffff; 
+    border: none; 
+    padding: 10px 25px;
+    border-radius: 4px; 
+    font-weight: 700; 
+    cursor: pointer; 
+    letter-spacing: 1px; 
+    transition: 0.2s;
+}
+
+.publish-btn:hover { background: #002d5a; }
+
+.post-header { display: flex; gap: 15px; margin-bottom: 15px; }
+.post-user-info h3 { margin: 0; font-size: 15px; color: #1a1a1a; }
+.post-user-info span { font-size: 12px; color: #666; }
+.post-body p { font-size: 15px; line-height: 1.6; color: #1a1a1a; margin-bottom: 15px; }
+.post-attached-img { width: 100%; border-radius: 8px; border: 1px solid #e1e4e8; }
+
+.post-footer-actions { 
+    display: flex; 
+    border-top: 1px solid #f0f2f5; 
+    padding-top: 10px; 
+    gap: 10px; 
+}
+
+.post-footer-actions button {
+    flex: 1; 
+    background: transparent; 
+    border: none; 
+    color: #666; 
+    font-weight: 700;
+    padding: 10px; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    transition: 0.2s; 
+    font-size: 13px;
+}
+
+.post-footer-actions button:hover { 
+    background: #f3f2ef; 
+    color: #004182; 
+}
+
+/* =========================================
+   SIMPLE BOTTOM FOOTER STYLES
+========================================= */
+.simple-bottom-footer {
+    background-color: #002d5a;
+    color: #ffffff;
+    text-align: center;
+    padding: 50px 20px 20px;
+    width: 100%;
+    margin-top: auto; /* Magic line that forces it to the bottom */
+}
+
+.footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-content h3 {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-content p {
+    color: #d1d1d1;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.footer-socials a {
+    color: #ffffff;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: #8bb9fe;
+    transform: translateY(-3px);
+}
+
+.footer-copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+}
+
+.footer-copyright p {
+    color: #999;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+/* =========================================
+   LIKES & COMMENTS STYLES
+========================================= */
+/* When a user likes a post, the button turns Navy Blue */
+.post-footer-actions button.liked-btn {
+    color: #004182;
+    background-color: #f0f6ff;
+}
+
+.comments-section {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #f0f2f5;
+}
+
+.comment-bubble {
+    background-color: #f3f2ef;
+    padding: 10px 15px;
+    border-radius: 0 12px 12px 12px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    max-width: 90%;
+}
+
+.comment-bubble strong {
+    font-size: 13px;
+    color: #1a1a1a;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.comment-bubble p {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+}
+
+.add-comment-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.add-comment-form input {
+    flex: 1;
+    border: 1px solid #e1e4e8;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.add-comment-form input:focus {
+    border-color: #004182;
+}
+
+.add-comment-form button {
+    background: transparent;
+    border: none;
+    color: #004182;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add-comment-form button:hover {
+    color: #002d5a;
+    transform: scale(1.1);
+}
+/* =========================================
+   DELETE & SHARE BUTTON STYLES
+========================================= */
+
+/* The trash can icon style */
+.delete-btn {
+    background: transparent;
+    border: none;
+    color: #a0aec0;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.delete-btn:hover {
+    color: #e53e3e; /* Turns red to indicate deletion */
+    background: #fff5f5;
+}
+
+/* Ensuring all action buttons (Like, Comment, Share Link) look identical */
+.action-btn-styled {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: #666;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.2s;
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none; /* Important for the anchor tag */
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.action-btn-styled:hover {
+    background: #f3f2ef;
+    color: #004182;
+}
+
+/* Removing any default link behaviors from the Share button */
+.share-link-btn {
+    color: #666 !important;
+}
+
+.share-link-btn:hover {
+    color: #004182 !important;
+}

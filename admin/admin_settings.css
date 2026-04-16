@@ -1,0 +1,89 @@
+/* =========================================
+   ADMIN SETTINGS STYLES
+========================================= */
+
+.settings-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.settings-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+}
+
+.settings-card h3 {
+    font-size: 16px;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.settings-card h3 i { color: #1890ff; }
+
+.setting-item { margin-bottom: 25px; }
+
+.setting-item label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+.switch-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.setting-item input[type="text"], 
+.setting-item input[type="password"],
+.setting-item textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.setting-item input:focus, .setting-item textarea:focus {
+    border-color: #1890ff;
+    box-shadow: 0 0 0 3px rgba(24,144,255,0.1);
+}
+
+.hint { font-size: 12px; color: #a0aec0; margin-top: 8px; }
+
+.save-btn {
+    width: 100%;
+    padding: 12px;
+    background: #001529;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sec-btn { background: #1890ff; }
+
+.save-btn:hover { opacity: 0.9; transform: translateY(-2px); }
+
+.alert-success-top {
+    background: #f6ffed;
+    color: #52c41a;
+    border: 1px solid #b7eb8f;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}

@@ -1,0 +1,186 @@
+/* =========================================
+   COMPANY PROFILE - PREMIUM STYLING
+========================================= */
+
+.profile-layout {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.p-30 { padding: 30px; }
+
+/* --- FORM STYLING --- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Fixes the messy inputs from your screenshot */
+.form-group input, 
+.form-group textarea {
+    width: 100%; 
+    padding: 12px 15px; 
+    border: 1px solid #cbd5e0; 
+    border-radius: 6px; 
+    font-size: 14px; 
+    outline: none;
+    font-family: 'Inter', sans-serif; 
+    transition: 0.2s ease;
+    background-color: #ffffff;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus { 
+    border-color: #004182; 
+    box-shadow: 0 0 0 3px rgba(0, 65, 130, 0.1); 
+}
+
+/* --- LOGO & TOP SECTION --- */
+.profile-top-section {
+    display: flex;
+    gap: 25px;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #f0f2f5;
+}
+
+.logo-upload-box {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.logo-upload-box img, 
+.logo-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 2px solid #e1e4e8;
+    background: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #cbd5e0;
+    margin-bottom: 12px;
+}
+
+.btn-upload-logo {
+    font-size: 11px;
+    font-weight: 800;
+    color: #004182;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    border: 1px solid #004182;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+.btn-upload-logo:hover {
+    background: #004182;
+    color: #fff;
+}
+
+.basic-info-fields {
+    flex: 1;
+}
+
+/* --- BUTTON STYLING --- */
+.btn-publish {
+    width: 100%;
+    background: #004182;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-publish:hover {
+    background: #002d5a;
+    box-shadow: 0 4px 12px rgba(0, 65, 130, 0.2);
+}
+
+/* --- PUBLIC PREVIEW CARD --- */
+.preview-card {
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.preview-logo img, 
+.preview-logo .logo-placeholder {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.preview-card h2 {
+    font-size: 22px;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+}
+
+.text-muted {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.preview-link {
+    display: inline-block;
+    color: #004182;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.preview-link:hover { text-decoration: underline; }
+
+.preview-divider {
+    height: 1px;
+    background: #eee;
+    margin: 20px 0;
+}
+
+.preview-about {
+    font-size: 14px;
+    color: #4a5568;
+    line-height: 1.6;
+    text-align: left;
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #edf2f7;
+}
+
+/* Alert Messages */
+.alert {
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.alert-success { background: #e6f6e6; color: #1f7a1f; border: 1px solid #c3e6c3; }

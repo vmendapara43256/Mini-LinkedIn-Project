@@ -1,0 +1,188 @@
+/* =========================================
+   SCHEDULE PAGE - PREMIUM STYLING (UPDATED)
+========================================= */
+
+.schedule-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.p-25 { padding: 30px; }
+
+/* --- FORM GROUP STYLING --- */
+.form-group { margin-bottom: 20px; }
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Base style for all inputs */
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%; 
+    padding: 12px 15px; 
+    border: 1px solid #cbd5e0; 
+    border-radius: 6px; 
+    font-size: 14px; 
+    outline: none;
+    font-family: 'Inter', sans-serif; 
+    transition: 0.2s ease;
+    background-color: #ffffff;
+    appearance: none; /* Removes default browser styling */
+}
+
+/* ONLY add the dropdown arrow to SELECT elements */
+.form-group select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%231a1a1a' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C2.185 5.355 2.401 5 2.808 5h10.384a.408.408 0 0 1 .333.658l-4.796 5.482a.5.5 0 0 1-.782 0z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    padding-right: 40px; /* Space for the arrow */
+    cursor: pointer;
+}
+
+/* Clear focus state for all - No more black bars! */
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus { 
+    border-color: #004182; 
+    box-shadow: 0 0 0 3px rgba(0, 65, 130, 0.1); 
+    outline: none;
+}
+
+/* --- GRID ROWS --- */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-row.three-cols {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+/* --- THE CONFIRM BUTTON --- */
+.btn-schedule {
+    width: 100%;
+    background: #004182;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-schedule:hover {
+    background: #002d5a;
+    box-shadow: 0 4px 12px rgba(0, 65, 130, 0.2);
+}
+
+/* --- UPCOMING LIST STYLING --- */
+.interview-card {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid #f0f2f5;
+    background: #fff;
+    transition: 0.2s;
+}
+
+.interview-card:last-child { border-bottom: none; }
+
+.int-header-row {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.int-date-box {
+    background: #eef3f8;
+    color: #004182;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #cce0ff;
+}
+
+.int-month {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.int-day {
+    font-size: 22px;
+    font-weight: 800;
+    display: block;
+}
+
+.int-details h4 {
+    color: #1a1a1a;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.int-job {
+    color: #004182;
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.int-meta {
+    font-size: 12px;
+    color: #666;
+    display: flex;
+    gap: 15px;
+}
+
+.int-actions-row {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-join {
+    background: #004182;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.2s;
+}
+
+.btn-join:hover {
+    background: #002d5a;
+    transform: translateY(-2px);
+}
+
+.empty-state {
+    padding: 40px;
+    text-align: center;
+    color: #999;
+}
